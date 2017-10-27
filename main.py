@@ -2,7 +2,6 @@ import asyncio
 import discord
 import secrets
 import voice
-import pymongo
 
 from discord.ext import commands
 from voice import Music, VoiceEntry, VoiceState, ChatBot

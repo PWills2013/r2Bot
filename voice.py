@@ -1,7 +1,7 @@
 import asyncio
 import discord
 import random
-import pymongo
+import scrims
 from discord.ext import commands
 
 class VoiceEntry:
@@ -316,4 +316,7 @@ class ChatBot:
         del1(ctx)
         return await self.bot.say("Hardcore Parkour! https://www.youtube.com/watch?v=0Kvw2BPKjz0")
 
-
+    @commands.command(pass_context=True, no_pm=False)
+    async def LFS(self, ctx, start="", end="", dayofweek=""):
+        name = ctx.message.author
+        await insert-scrim(name, start, end, dayofweek)
